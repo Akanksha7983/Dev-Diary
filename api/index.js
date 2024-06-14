@@ -5,6 +5,7 @@ import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import postRoutes from './routes/post.route.js';
 import cookieParser from 'cookie-parser';
+import commentRoutes from './routes/comment.route.js';
 
 
 dotenv.config();
@@ -23,7 +24,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use('/api/post', postRoutes);
+
 
 app.listen(3000 , () => {
     console.log('server is running on port 3000!!');
@@ -31,7 +32,8 @@ app.listen(3000 , () => {
 
 app.use('/api/auth',authRoutes);
 app.use('/api/user', userRoutes);
-app
+app.use('/api/post', postRoutes);
+app.use('/api/comment',commentRoutes);
 
 
 
