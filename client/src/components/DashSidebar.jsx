@@ -71,7 +71,7 @@ export default function DashSidebar() {
                      active={tab === 'posts'}
                      icon={HiDocumentText}
                      as='div'>
-                      Posts
+                      Articles
                      </Sidebar.Item>
                 </Link>
                 )}

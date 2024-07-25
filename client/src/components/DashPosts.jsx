@@ -80,8 +80,8 @@ export default function DashPosts() {
             <Table hoverable  className='shadow-md'>
                <Table.Head>
                 <Table.HeadCell>Date updated</Table.HeadCell>
-                <Table.HeadCell>Post Image</Table.HeadCell>
-                <Table.HeadCell>Post Title</Table.HeadCell>
+                <Table.HeadCell>Article Image</Table.HeadCell>
+                <Table.HeadCell>Title</Table.HeadCell>
                 <Table.HeadCell>Category</Table.HeadCell>
                 <Table.HeadCell>Delete</Table.HeadCell>
                 <Table.HeadCell>
@@ -140,7 +140,7 @@ export default function DashPosts() {
             }
          </>
       ):
-         (<p>You have no posts yet </p> )}
+         (<p>You have no Articles yet </p> )}
 
 <Modal 
 show={showModal} onClose={()=> setShowModal(false)}

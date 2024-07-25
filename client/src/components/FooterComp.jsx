@@ -15,11 +15,11 @@ export default function FooterComp() {
               text-lg sm:text-xl font-semibold
              dark:text-white'>
               <span className='px-2 py-1 bg-gradient-to-r
-             from-indigo-500 via-purple-500 to-pink-500
+             from-cyan-500 via-green-500 to-blue-500
               rounded-lg text-white'>
-              Akanksha's
+               DevDiary
               </span>
-              Blog
+             
              </Link>
            </div>
 
@@ -42,7 +42,7 @@ export default function FooterComp() {
                     target='_blank'
                     rel='noopener noreferrer'
                    >
-                  Akanksha's Blog
+                  DevDiary
                 </Footer.Link>
 
               </Footer.LinkGroup>
@@ -90,7 +90,7 @@ export default function FooterComp() {
 
         <Footer.Divider />
         <div className=' w-full sm:flex sm:items-center sm:justify-between'>
-          <Footer.Copyright href='#'  by="Akanksha's blog"
+          <Footer.Copyright href='#'  by="NIT Students"
            year={new Date().getFullYear()}
            />
 
